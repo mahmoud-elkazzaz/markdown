@@ -21,9 +21,9 @@ $content-background-color: #55A3FF;
 }
 
 #previewer {
-  width: 50%;
+  width: 60%;
   min-height: 200px;
-  z-index: 1;
+  display: block;
 }
 
 #editor {
@@ -43,6 +43,14 @@ $content-background-color: #55A3FF;
   min-height: 150px;
 }
 
+#markdown {
+  padding: 20px;
+}
+
 .icon {
   cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
