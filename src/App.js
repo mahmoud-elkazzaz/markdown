@@ -59,9 +59,7 @@ function App() {
               Editor
             <span onClick={handleEditorResize} className="icon" ref={editorInput}>{editorIcon}</span>
             </CardHeader>
-            {/* <CardBody>  */}
-          <textarea ref={editorText} className="text-area" id="editor-text" rows="5" cols="75" value={text} onChange={textChange} />
-            {/* </CardBody> */}
+              <textarea ref={editorText} className="text-area" id="editor-text" rows="5" cols="75" value={text} onChange={textChange} />
           </Card>
       </div>
       <div ref={previewerCard} id="previewer">
@@ -70,11 +68,9 @@ function App() {
             Previewer
             <span onClick={handlePreviewerResize} className="icon" ref={previewerInput}>{previewerIcon}</span>
            </CardHeader>
-           {/* <CardBody> */}
-          <span ref={previewerText} id="markdown" className="text-area" >
+          <div ref={previewerText} id="markdown" className="text-area" >
             <Markdown>{text}</Markdown>
-          </span>
-           {/* </CardBody> */}
+          </div>
         </Card>
       </div>
     </div>  

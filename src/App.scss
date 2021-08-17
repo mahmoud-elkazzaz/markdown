@@ -29,6 +29,10 @@ $content-background-color: #55A3FF;
 #editor {
   max-width: 40%;
   margin-bottom: 20px;
+
+  #editor-text {
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -41,6 +45,7 @@ $content-background-color: #55A3FF;
 .text-area {
   background-color: $content-background-color;
   min-height: 150px;
+  max-width: 100%;
 }
 
 #markdown {
